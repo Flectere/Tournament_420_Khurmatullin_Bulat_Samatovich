@@ -9,6 +9,44 @@
       Title="EditTournamentPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="TypeTb" Grid.Row="0" Text = "ИЗМЕНЕНИЕ ТУРНИРА" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBlock Text="Название:"/>
+            <TextBox Width="200" Name="LoginTb"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <TextBlock Text="Дата:"/>
+            <TextBox Width="200" Name="PasswordTb"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="3">
+            <TextBlock Text="Игра:"/>
+            <TextBox Width="200" Name="NameTb"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="3">
+            <TextBlock Text="Фонд:"/>
+            <TextBox Width="200" Name="LastNameTb"/>
+        </StackPanel>
+
+        <Button Name="AddTournamentBt" Grid.Row="6" Grid.Column="2" Width="120" Height="40" Content="Изменить" Click="AddEmployeeBt_Click"/>
     </Grid>
 </Page>

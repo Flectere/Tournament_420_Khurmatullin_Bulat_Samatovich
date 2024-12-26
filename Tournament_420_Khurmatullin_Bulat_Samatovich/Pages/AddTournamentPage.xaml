@@ -23,53 +23,29 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="TypeTb" Grid.Row="0" Text = "РЕГИСТРАЦИЯ ИГРОКА" Grid.RowSpan="1" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="TypeTb" Grid.Row="0" Text = "РЕГИСТРАЦИЯ ТУРНИРА" Grid.RowSpan="1" Grid.Column="2"/>
 
-        <StackPanel Grid.Row="1" Grid.Column="1">
-            <TextBlock Text="Команда:"/>
-            <ComboBox Name = "RoleCb" Width="200">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding Name}"/>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-        </StackPanel>
+
 
         <StackPanel Grid.Row="2" Grid.Column="1">
-            <TextBlock Text="Логин:"/>
+            <TextBlock Text="Название:"/>
             <TextBox Width="200" Name="LoginTb"/>
         </StackPanel>
 
         <StackPanel Grid.Row="3" Grid.Column="1">
-            <TextBlock Text="Пароль:"/>
+            <TextBlock Text="Дата:"/>
             <TextBox Width="200" Name="PasswordTb"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="3">
-            <TextBlock Text="Имя:"/>
+        <StackPanel Grid.Row="2" Grid.Column="3">
+            <TextBlock Text="Игра:"/>
             <TextBox Width="200" Name="NameTb"/>
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="3">
-            <TextBlock Text="Фамилия:"/>
+        <StackPanel Grid.Row="3" Grid.Column="3">
+            <TextBlock Text="Фонд:"/>
             <TextBox Width="200" Name="LastNameTb"/>
         </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="3">
-            <TextBlock Text="Отчество:"/>
-            <TextBox Width="200" Name="PatronymicTb"/>
-        </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="3">
-            <TextBlock Text="Номер:"/>
-            <TextBox Width="200" Name="NumberTb"/>
-        </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="1">
-            <TextBlock Text="Роль:"/>
-            <TextBox Width="200" Name="РольTb"/>
-        </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="2">
-            <TextBlock Text="Никнейм:"/>
-            <TextBox Width="200" Name="NicknameTb"/>
-        </StackPanel>
+
         <Button Name="AddTournamentBt" Grid.Row="6" Grid.Column="2" Width="120" Height="40" Content="Добавить" Click="AddEmployeeBt_Click"/>
     </Grid>
 </Page>

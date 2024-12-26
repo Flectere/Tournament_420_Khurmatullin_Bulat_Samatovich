@@ -24,5 +24,10 @@ namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
         {
             InitializeComponent();
         }
+
+        private void AddEmployeeBt_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new OrganizatorMainPage());
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
 
         private void AddBt_Click(object sender, RoutedEventArgs e)
         {
-            
+            NavigationService.Navigate(new JoinTournamentPage());
         }
 
         private void JoinBt_Click(object sender, RoutedEventArgs e)

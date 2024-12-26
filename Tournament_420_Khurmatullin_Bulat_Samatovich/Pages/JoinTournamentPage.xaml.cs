@@ -34,7 +34,7 @@ namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
         {
             NavigationService.Navigate(new EditTournamentPage());
             MessageBox.Show("Вы успешно записались");
-            NavigationService.GoBack();
+            NavigationService.Navigate(new NavigationPage());
         }
         
     }
