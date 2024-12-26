@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tournament_420_Khurmatullin_Bulat_Samatovich.DB;
 
 namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
 {
@@ -27,7 +28,17 @@ namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
 
         private void EnterBt_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                string login = LoginTb.Text.Trim();
+                string password = PasswordPb.Password.Trim();
+                Member user = DBConnection.entities.Member.FirstOrDefault(o => o.Login == login && o.Password == password);
+                NavigationService.Navigate(new OrganizatorMainPage());
+            }
+            catch
+            {
+                MessageBox.Show("Произошла ошибка, попробуйте снова.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

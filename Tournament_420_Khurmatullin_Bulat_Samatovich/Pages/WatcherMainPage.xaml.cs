@@ -12,22 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tournament_420_Khurmatullin_Bulat_Samatovich.DB;
 
 namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для WatcherAuthPage.xaml
+    /// Логика взаимодействия для WatcherMainPage.xaml
     /// </summary>
-    public partial class WatcherAuthPage : Page
+    public partial class WatcherMainPage : Page
     {
-        public WatcherAuthPage()
+        public WatcherMainPage()
         {
             InitializeComponent();
-        }
-
-        private void EnterBt_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new WatcherMainPage());
+            ListUsers.ItemsSource = DBConnection.entities.Tournament.ToList();
         }
     }
 }
