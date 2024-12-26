@@ -9,6 +9,57 @@
       Title="OrganizatorMainPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Button Grid.Column="6"
+    FontSize="30"
+    Background="#FF1E426B"
+    Name="AddBt" Click="AddBt_Click" 
+    >Добавить</Button>
+
+        <ListView Grid.Row="3"
+      Name="ListUsers"
+      Grid.ColumnSpan="7"
+      Grid.RowSpan="5" d:ItemsSource="{d:SampleData ItemCount=5}"
+      FontSize="20" SelectionChanged="ListUsers_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                   >
+                        <TextBlock Text="{Binding Name}"
+                       Margin="20"></TextBlock>
+                        <TextBlock Text="{Binding Game}"
+                        Margin="20"></TextBlock>
+                        <TextBlock Text="{Binding Date}"
+                        Margin="20"></TextBlock>
+                        <TextBlock Text="{Binding Fond}"
+Margin="20"/>
+                        <TextBlock Text="{Binding Status.Name}"
+Margin="20"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

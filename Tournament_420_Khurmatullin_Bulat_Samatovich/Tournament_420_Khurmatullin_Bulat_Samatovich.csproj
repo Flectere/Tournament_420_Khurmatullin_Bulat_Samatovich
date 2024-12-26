@@ -128,7 +128,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddTournamentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditTournamentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +149,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\OrganizatorAuthPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OrganizatorMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -162,8 +174,14 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\AddTournamentPage.xaml.cs">
+      <DependentUpon>AddTournamentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditTournamentPage.xaml.cs">
+      <DependentUpon>EditTournamentPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MemberAuthPage.xaml.cs">
       <DependentUpon>MemberAuthPage.xaml</DependentUpon>
@@ -173,6 +191,9 @@
     </Compile>
     <Compile Include="Pages\OrganizatorAuthPage.xaml.cs">
       <DependentUpon>OrganizatorAuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrganizatorMainPage.xaml.cs">
+      <DependentUpon>OrganizatorMainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RegistrationMemberPage.xaml.cs">
       <DependentUpon>RegistrationMemberPage.xaml</DependentUpon>

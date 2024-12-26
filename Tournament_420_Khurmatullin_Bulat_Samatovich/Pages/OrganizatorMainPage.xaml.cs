@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tournament_420_Khurmatullin_Bulat_Samatovich.DB;
 
 namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
 {
@@ -23,6 +24,23 @@ namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
         public OrganizatorMainPage()
         {
             InitializeComponent();
+            ListUsers.ItemsSource = DBConnection.entities.Tournament.ToList();
+        }
+
+
+        private void AddBt_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AddTournamentPage());
+        }
+
+        private void ListUsers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            NavigationService.Navigate(new EditTournamentPage());
+        }
+        private void ExitBt_Click(object sender, RoutedEventArgs e)
+        {
+           NavigationService.Navigate(new NavigationPage());
+
         }
     }
 }

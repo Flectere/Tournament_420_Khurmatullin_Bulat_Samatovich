@@ -33,6 +33,7 @@ namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
                 string login = LoginTb.Text.Trim();
                 string password = PasswordPb.Password.Trim();
                 Organizator user = DBConnection.entities.Organizator.FirstOrDefault(o => o.Login == login && o.Password == password);
+                NavigationService.Navigate(new OrganizatorMainPage());
             }
             catch
             {
