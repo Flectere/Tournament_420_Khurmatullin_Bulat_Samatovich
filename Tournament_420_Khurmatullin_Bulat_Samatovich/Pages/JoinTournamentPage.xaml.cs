@@ -17,23 +17,25 @@ using Tournament_420_Khurmatullin_Bulat_Samatovich.DB;
 namespace Tournament_420_Khurmatullin_Bulat_Samatovich.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для RegistrationWatcherPage.xaml
+    /// Логика взаимодействия для JoinTournamentPage.xaml
     /// </summary>
-    public partial class RegistrationWatcherPage : Page
+    public partial class JoinTournamentPage : Page
     {
-        public RegistrationWatcherPage()
+        public JoinTournamentPage()
         {
             InitializeComponent();
+            ListUsers.ItemsSource = DBConnection.entities.Tournament.ToList();
         }
 
-        private void EnterBt_Click(object sender, RoutedEventArgs e)
+
+       
+
+        private void ListUsers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Watcher member = new Watcher();
-
-            member.Login = LoginTb.Text;
-            DBConnection.entities.Watcher.Add(member);
-            DBConnection.entities.SaveChanges();
-            NavigationService.Navigate(new AuthorizationPage());
+            NavigationService.Navigate(new EditTournamentPage());
+            MessageBox.Show("Вы успешно записались");
+            NavigationService.GoBack();
         }
+        
     }
 }
