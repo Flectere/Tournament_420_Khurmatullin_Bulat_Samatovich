@@ -1,0 +1,49 @@
+﻿<Page x:Class="Tournament_420_Khurmatullin_Bulat_Samatovich.Pages.RegistrationWatcherPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tournament_420_Khurmatullin_Bulat_Samatovich.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationWatcherPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.ColumnSpan="2"
+   HorizontalAlignment="Center"
+   VerticalAlignment="Bottom"
+   FontSize="32"
+           Grid.Row="1">WELCOME</TextBlock>
+        <TextBlock Grid.Row="2"
+           HorizontalAlignment="Right"
+           VerticalAlignment="Center"
+           FontSize="25"
+           Margin="0 0 35 0">Login</TextBlock>
+        <TextBox Grid.Row="2"
+         Grid.Column="1"
+         HorizontalAlignment="Left"
+         VerticalAlignment="Center"
+         FontSize="25"
+         Width="200"
+         Name="LoginTb"></TextBox>
+        <Button Grid.Row="3"
+        Grid.ColumnSpan="2"
+        Width="200"
+        Height="50"
+        FontSize="25"
+        Name="EnterBt"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Top" Click="EnterBt_Click">Register</Button>
+    </Grid>
+</Page>

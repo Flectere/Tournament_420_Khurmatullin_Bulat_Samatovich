@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,7 @@ namespace Tournament_420_Khurmatullin_Bulat_Samatovich
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.NavigationService.Navigate(new Pages.NavigationPage());
         }
     }
 }
