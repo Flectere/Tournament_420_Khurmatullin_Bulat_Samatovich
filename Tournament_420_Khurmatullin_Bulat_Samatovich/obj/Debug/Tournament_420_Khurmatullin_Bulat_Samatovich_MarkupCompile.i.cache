@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\202124\Documents\Tournament_420_Khurmatullin_Bulat_Samatovich\Tournament_420_Khurmatullin_Bulat_Samatovich\App.xaml
-13-255450320
+14-1975217230
 2-973498431
-34-364717071
+351153143039
 181907131637
-MainWindow.xaml;Pages\AddTournamentPage.xaml;Pages\AuthorizationPage.xaml;Pages\EditTournamentPage.xaml;Pages\MemberAuthPage.xaml;Pages\NavigationPage.xaml;Pages\OrganizatorAuthPage.xaml;Pages\OrganizatorMainPage.xaml;Pages\RegistrationMemberPage.xaml;Pages\RegistrationPage.xaml;Pages\RegistrationWatcherPage.xaml;Pages\WatcherAuthPage.xaml;Pages\WatcherMainPage.xaml;
+MainWindow.xaml;Pages\AddTournamentPage.xaml;Pages\AuthorizationPage.xaml;Pages\EditTournamentPage.xaml;Pages\MemberAuthPage.xaml;Pages\MemberMainPage.xaml;Pages\NavigationPage.xaml;Pages\OrganizatorAuthPage.xaml;Pages\OrganizatorMainPage.xaml;Pages\RegistrationMemberPage.xaml;Pages\RegistrationPage.xaml;Pages\RegistrationWatcherPage.xaml;Pages\WatcherAuthPage.xaml;Pages\WatcherMainPage.xaml;
 
 True
 
